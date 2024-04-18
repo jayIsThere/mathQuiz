@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="366dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="84dp"
+        android:text="Hello World!"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totalCorrectTextView"
+        android:layout_width="366dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/correctIncorrectTextView"
+        android:layout_width="366dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalCorrectTextView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/example4Button"
+        android:layout_width="161dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:onClick="example4ButtonClicked"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/example3Button"
+        app:layout_constraintTop_toBottomOf="@+id/example2Button" />
+
+    <Button
+        android:id="@+id/example2Button"
+        android:layout_width="161dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="128dp"
+        android:onClick="example2ButtonClicked"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/example1Button"
+        app:layout_constraintTop_toBottomOf="@+id/correctIncorrectTextView" />
+
+    <Button
+        android:id="@+id/example3Button"
+        android:layout_width="161dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:onClick="example3ButtonClicked"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/example4Button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/example1Button" />
+
+    <Button
+        android:id="@+id/example1Button"
+        android:layout_width="161dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="128dp"
+        android:onClick="example1ButtonClicked"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/example2Button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctIncorrectTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
