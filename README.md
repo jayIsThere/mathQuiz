@@ -43,7 +43,9 @@ Example JSON format:
 
 ## Screenshots
 
-![Screenshot of the Math Quiz app](screenshot.png)
+<img src="Screenshot_1.png" width="300" height="600"/>
+<img src="Screenshot_2.png" width="300" height="600"/>
+<img src="Screenshot_3.png" width="300" height="600"/>
 
 ## Contributing
 
